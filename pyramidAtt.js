@@ -78,7 +78,7 @@ async function readAndDraw(){
                           .attr('y', - (interv - padding / 2))
                           .attr('class', "bar right")
                           .style('fill', '#9C27B0');
-                          
+
   barGroups.append('text')
           .attr('transform', `translate(${gapBwBars}, 0)`)
           .text(d => d.CategoryAlph == "" ? d.Category : "  " + d.Category)
@@ -124,7 +124,7 @@ async function readAndDraw(){
       .call(axis);
 
     d3.selectAll('.axis text')
-      .style('font-size', '14px')
+      .style('font-size', '12px')
   }
 
   // draw axis
